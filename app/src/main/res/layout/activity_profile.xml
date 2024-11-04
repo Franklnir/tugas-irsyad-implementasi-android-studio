@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FBD586">
+
+    <!-- Foto Profil -->
+
+    <!-- Nama Pengguna -->
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/nnn"
+        android:contentDescription="Profile Picture"
+        android:src="@drawable/nnn" />
+
+    <!-- Form Input untuk Profil dan Tombol Logout & Help Me -->
+
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="irsyad"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="445dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/burger"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Field Username -->
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EBFFFFFF"
+            android:hint="Masukkan Nama Pengguna"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <!-- Field Password -->
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#EBFFFFFF"
+            android:hint="Masukkan Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <!-- Field Alamat -->
+        <EditText
+            android:id="@+id/edit_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#EBFFFFFF"
+            android:hint="Masukkan Alamat"
+            android:inputType="textPostalAddress"
+            android:minHeight="48dp" />
+
+        <!-- Field Nomor Telepon -->
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#EBFFFFFF"
+            android:hint="Masukkan Nomor Telepon"
+            android:inputType="phone"
+            android:minHeight="48dp" />
+
+        <!-- Tombol Logout dan Help Me -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Tombol Logout -->
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:text="Logout"
+                android:textColor="@android:color/white" />
+
+            <!-- Tombol Help Me -->
+            <Button
+                android:id="@+id/btn_help"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:text="Help Me"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
