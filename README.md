@@ -54,7 +54,5 @@ o	Tombol: Logout dan Help me.
 Catatan 
 •	Tema khas Aplikasi: Menggunakan latar visual bertema makanan yang konsisten untuk pengalaman yang menarik dan intuitif.
 •	Penambahan Resep: Resep dalam aplikasi dapat terus diperbarui atau ditambah sesuai kebutuhan aja
-
-
 ![Regis3](https://github.com/user-attachments/assets/e7a51fd7-91a2-4c39-8e9d-1370835a67ae)
 
