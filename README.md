@@ -1,6 +1,7 @@
 # penjalasan berupa story board dari resep aplikasi 
 
-![Regis3](https://github.com/user-attachments/assets/e7a51fd7-91a2-4c39-8e9d-1370835a67ae)
+![Regis4](https://github.com/user-attachments/assets/3fb85382-302f-44e1-aa59-5da53533dd94)
+
 
 1. Layar Login
 •	Deskripsi: Tampilan awal tempat pengguna login.
