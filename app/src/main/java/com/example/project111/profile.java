@@ -17,7 +17,7 @@ public class profile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile); // Pastikan layout ini sesuai dengan file XML Anda
+        setContentView(R.layout.activity_profile);
 
         usernameLabel = findViewById(R.id.username_label);
         editUsername = findViewById(R.id.edit_username);
@@ -26,28 +26,28 @@ public class profile extends AppCompatActivity {
         editPhone = findViewById(R.id.edit_phone);
         btnLogout = findViewById(R.id.btn_logout);
 
-        // Ambil data pengguna dari SharedPreferences
+
         SharedPreferences sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE);
         String username = sharedPreferences.getString("username", "");
         String password = sharedPreferences.getString("password", "");
         String alamat = sharedPreferences.getString("alamat", "");
         String nomorhp = sharedPreferences.getString("nomorhp", "");
 
-        // Tampilkan data pada profil
+
         usernameLabel.setText(username);
         editUsername.setText(username);
         editPassword.setText(password);
         editAddress.setText(alamat);
         editPhone.setText(nomorhp);
 
-        // Tombol Logout
+
         btnLogout.setOnClickListener(v -> {
-            // Hapus data pengguna yang tersimpan
+
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.clear();
             editor.apply();
 
-            // Kembali ke layar login
+
             Intent intent = new Intent(profile.this, register.class);
             startActivity(intent);
             finish();
