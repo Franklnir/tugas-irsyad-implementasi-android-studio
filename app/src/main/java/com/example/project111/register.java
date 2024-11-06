@@ -1,4 +1,3 @@
-// MainActivity.java
 package com.example.project111;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,7 +32,7 @@ public class register extends AppCompatActivity {
                 String alamat = etAlamat.getText().toString();
                 String nomorHP = etNomorHP.getText().toString();
 
-                // Simpan data pengguna jika username dan password sesuai
+
                 if (username.equals("irsyad26") && password.equals("312310512")) {
                     SharedPreferences sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -43,7 +42,7 @@ public class register extends AppCompatActivity {
                     editor.putString("nomorhp", nomorHP);
                     editor.apply();
 
-                    // Pindah ke activity Profile
+
                     Intent intent = new Intent(register.this, MainActivity.class);
                     startActivity(intent);
                     finish();
