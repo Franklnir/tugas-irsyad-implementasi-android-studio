@@ -23,29 +23,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Inisialisasi komponen dari XML
+
         searchBar = findViewById(R.id.search_bar);
         burgerItem = findViewById(R.id.foodItemBurger);
         rendangItem = findViewById(R.id.foodItemRendang);
         susuGandumItem = findViewById(R.id.foodItemSusuGandum);
-        rotiGandumItem = findViewById(R.id.foodItemRotiGandum); // Pastikan item ini diinisialisasi
+        rotiGandumItem = findViewById(R.id.foodItemRotiGandum);
         spicyButton = findViewById(R.id.spicyButton);
         healthyButton = findViewById(R.id.healthyButton);
         veganButton = findViewById(R.id.veganButton);
 
-        // Mengatur fungsionalitas pencarian
+
         setupSearchFunctionality();
-        // Mengatur filter tombol
+
         setupButtonFilters();
-        // Mengatur listener klik untuk item
+
         setupItemClickListeners();
 
-        // Inisialisasi dan menambahkan onClickListener pada ikon profil
+
         ImageView profileIcon = findViewById(R.id.profileIcon);
         profileIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Intent untuk membuka activity_profile.xml
+
                 Intent intent = new Intent(MainActivity.this, profile.class);
                 startActivity(intent);
             }
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void filterItemsBySearch(String query) {
-        // Menampilkan atau menyembunyikan item berdasarkan pencarian
+
         burgerItem.setVisibility(query.contains("burger") ? View.VISIBLE : View.GONE);
         rendangItem.setVisibility(query.contains("rendang") ? View.VISIBLE : View.GONE);
         susuGandumItem.setVisibility(query.contains("susu gandum") ? View.VISIBLE : View.GONE);
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void filterItems(String filter) {
-        // Menampilkan atau menyembunyikan item berdasarkan tombol filter yang dipilih
+
         burgerItem.setVisibility(filter.equals("burger") ? View.VISIBLE : View.GONE);
         rendangItem.setVisibility(filter.equals("rendang") ? View.VISIBLE : View.GONE);
         susuGandumItem.setVisibility(filter.equals("susu gandum") ? View.VISIBLE : View.GONE);
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupItemClickListeners() {
-        // Menangani klik pada setiap item makanan
+
         burgerItem.setOnClickListener(v -> openRecipeActivity(resep_burger.class));
         rendangItem.setOnClickListener(v -> openRecipeActivity(resep_rendang.class));
         susuGandumItem.setOnClickListener(v -> openRecipeActivity(susu_gandum.class));
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openRecipeActivity(Class<?> activityClass) {
-        // Membuka aktivitas resep yang sesuai
+
         Intent intent = new Intent(MainActivity.this, activityClass);
         startActivity(intent);
     }
