@@ -6,15 +6,7 @@
     android:background="#F6EDC2"
     android:padding="16dp">
 
-    <!-- Background Image -->
-    <!-- Set to lower alpha to make it more visible -->
 
-    <!-- Card Background -->
-
-
-    <!-- Recipe Image -->
-
-    <!-- Ingredients Title -->
     <ImageView
         android:id="@+id/background_image"
         android:layout_width="match_parent"
@@ -56,9 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/img_recipe1" />
 
-    <!-- Ingredients List -->
 
-    <!-- Cooking Steps Title -->
 
     <TextView
         android:id="@+id/tv_ingredients_list1"
@@ -89,7 +79,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_ingredients_list1" />
 
-    <!-- Cooking Steps List -->
+
     <TextView
         android:id="@+id/tv_steps_list"
         android:layout_width="332dp"
