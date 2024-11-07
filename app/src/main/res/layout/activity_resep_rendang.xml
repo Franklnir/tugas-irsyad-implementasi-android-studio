@@ -6,7 +6,7 @@
     android:padding="16dp"
     android:background="#FFE3A1">
 
-    <!-- Card Background -->
+
     <androidx.cardview.widget.CardView
         android:id="@+id/recipe_card1"
         android:layout_width="0dp"
@@ -20,18 +20,10 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="389dp"
-            android:layout_height="696dp"
+            android:layout_height="769dp"
             android:background="#FFEFD6"
             android:padding="16dp">
 
-            <!-- Recipe Image -->
-            <!-- Ganti dengan gambar rendang yang sesuai -->
-
-            <!-- Ingredients Title -->
-
-            <!-- Ingredients List -->
-
-            <!-- Cooking Steps Title -->
 
             <ImageView
                 android:id="@+id/img_recipe1"
@@ -58,19 +50,19 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/img_recipe1" />
 
-            <!-- Cooking Steps List -->
+
 
             <TextView
                 android:id="@+id/tv_ingredients_list1"
-                android:layout_width="333dp"
-                android:layout_height="265dp"
+                android:layout_width="340dp"
+                android:layout_height="252dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="4dp"
                 android:text="- 1 kg daging sapi, potong kotak\n- 1 liter santan kental\n- 3 lembar daun jeruk\n- 2 batang serai, memarkan\n- 3 lembar daun kunyit\n- Garam secukupnya\n\nBumbu Halus:\n- 10 siung bawang merah\n- 6 siung bawang putih\n- 5 buah cabai merah besar\n- 1 ruas jahe\n- 1 ruas lengkuas\n- 1 sdt ketumbar\n- 1/2 sdt jinten\n- 1/2 sdt pala"
                 android:textColor="#000000"
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.333"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_ingredients1" />
 
@@ -97,7 +89,7 @@
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.062"
+                app:layout_constraintHorizontal_bias="0.491"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_steps_title"
                 app:layout_constraintVertical_bias="0.0" />
