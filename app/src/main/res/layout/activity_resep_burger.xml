@@ -6,17 +6,17 @@
     android:padding="16dp"
     android:background="#FFE3A1">
 
-    <!-- Card Background -->
+
     <androidx.cardview.widget.CardView
         android:id="@+id/recipe_card1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="366dp"
+        android:layout_height="555dp"
         app:cardCornerRadius="16dp"
         app:cardElevation="4dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -24,23 +24,18 @@
             android:background="#FFEFD6"
             android:padding="16dp">
 
-            <!-- Recipe Image -->
-            <!-- Ganti dengan gambar burger yang sesuai -->
-            <!-- Ingredients Title -->
 
             <ImageView
                 android:id="@+id/img_recipe1"
                 android:layout_width="138dp"
                 android:layout_height="126dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="4dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/burger"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <!-- Ingredients List -->
             <TextView
                 android:id="@+id/tv_ingredients1"
                 android:layout_width="wrap_content"
@@ -68,9 +63,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_ingredients1" />
 
-            <!-- Cooking Steps Title -->
 
-            <!-- Cooking Steps List -->
 
             <TextView
                 android:id="@+id/tv_steps_title"
