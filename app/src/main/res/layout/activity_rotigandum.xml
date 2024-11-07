@@ -6,9 +6,6 @@
     android:background="#F3CE71"
     android:padding="16dp">
 
-    <!-- Background Image -->
-
-    <!-- Recipe Image -->
 
     <ImageView
         android:id="@+id/background_image"
@@ -36,13 +33,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Ingredients Title -->
 
-    <!-- Ingredients List -->
-
-    <!-- Cooking Steps Title -->
-
-    <!-- Cooking Steps List -->
     <TextView
         android:id="@+id/tv_ingredients1"
         android:layout_width="wrap_content"
@@ -63,14 +54,14 @@
         android:layout_width="196dp"
         android:layout_height="115dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:background="#80FFFFFF"
         android:gravity="start"
         android:text="- 2 cangkir tepung gandum utuh\n- 1 sdm ragi instan\n- 1 sdm gula pasir\n- 1 sdt garam\n- 1 cangkir air hangat\n- 2 sdm minyak zaitun"
         android:textColor="#131313"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintHorizontal_bias="0.811"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_ingredients1" />
 
