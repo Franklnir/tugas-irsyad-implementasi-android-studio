@@ -10,10 +10,6 @@
 
 
 
-    <!-- Toolbar -->
-
-    <!-- Search Bar -->
-
     <LinearLayout
         android:layout_width="378dp"
         android:layout_height="185dp"
@@ -22,7 +18,6 @@
         android:orientation="horizontal"
         android:paddingBottom="8dp">
 
-        <!-- Profile Icon -->
 
 
 
@@ -39,7 +34,7 @@
             android:text="TEMUKAN RESEP MAKANAN\nDAN KULINER DISINI 🍲"
             android:textColor="#FAF6EC"
             android:textSize="26sp" />
-        <!-- Profile Icon Positioned on Top-Right Corner of Background Image -->
+
         <ImageView
             android:id="@+id/profileIcon"
             android:layout_width="36dp"
@@ -81,9 +76,7 @@
             app:tint="#FFFFFF" />
     </LinearLayout>
 
-    <!-- Filter Tags -->
 
-    <!-- Result Count -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -117,7 +110,7 @@
             android:text="Vegan"
             android:textColor="#FFFFFF" />
 
-        <!-- New Button -->
+
     </LinearLayout>
 
     <TextView
@@ -129,7 +122,7 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <!-- Grid of Results -->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -141,13 +134,13 @@
             android:orientation="vertical"
             android:padding="8dp">
 
-            <!-- Row 1 -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <!-- Item 1 -->
+
                 <LinearLayout
                     android:id="@+id/foodItemBurger"
                     android:layout_width="0dp"
@@ -186,7 +179,7 @@
 
                 </LinearLayout>
 
-                <!-- Item 2 -->
+
                 <LinearLayout
                     android:id="@+id/foodItemRendang"
                     android:layout_width="0dp"
@@ -225,13 +218,13 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Row 2 -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <!-- Item 3 -->
+
                 <LinearLayout
                     android:id="@+id/foodItemSusuGandum"
                     android:layout_width="0dp"
@@ -269,7 +262,7 @@
                         android:textSize="14sp" />
                 </LinearLayout>
 
-                <!-- Item 4 (Cheeseburger) -->
+
                 <LinearLayout
                     android:id="@+id/foodItemRotiGandum"
                     android:layout_width="0dp"
@@ -308,19 +301,19 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Row 3 -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"/>
 
-            <!-- Row 3 -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <!-- Item 5 -->
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="185dp"
@@ -357,7 +350,7 @@
                         android:textSize="14sp" />
                 </LinearLayout>
 
-                <!-- Item 6 -->
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="185dp"
@@ -395,7 +388,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Add more items in pairs as needed -->
 
         </LinearLayout>
     </ScrollView>
